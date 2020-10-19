@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+table{width: 80%;height:100px;border:1px solid black; border-collapse:collapse;}
+  th, td {
+    border: 3px solid black;
+  }
+ table td:first-child{
+  background:lightpink}
+ table td:last-child{
+ background:white}
+.text{border :1px solid lightblue;}
+.lastBtn{align-self:center;}
+</style>
+</head>
+<body>
+<h2 style="background-color:lightblue;">사용자 정보입력</h2>
+<h4>안녕하세요.희정이의 홈페이지를 자유롭게 이용하려면 회원가입을 하셔야 합니다<br>
+아래의 사항들을 빠짐없이 기록해 주세요.</h4>
+<table>
+<tr>
+<td align=center>사용자 ID</td>
+<td colspan="3"><input type="text" class="text"><input type="button" value="ID중복확인"></td>
+</tr>
+<tr>
+<td align=center >비밀번호</td>
+<td><input type="text" class="text"></td>
+<td align=center>비밀번호 확인</td>
+<td><input type="text" class="text"></td>
+</tr>
+<tr>
+<td align=center>사용자 이름</td>
+<td colspan="3"><input type="text" class="text"></td>
+</tr>
+<tr>
+<td align=center>주민등록번호</td>
+<td colspan="3"><input type="text" class="text">-<input type="text" class="text"></td>
+</tr>
+<tr>
+<td align=center>생년월일</td>
+<td colspan="3"><input type="text" class="text">년 
+<select name="month" onchange="monthCheck(this)">
+       <option value="1">01</option>
+	   <option value="2">02</option>
+	   <option value="3">03</option>
+	   <option value="4">04</option>
+	   <option value="5">05</option>
+	    <option value="6">06</option>
+	   <option value="7">07</option>
+	   <option value="8">08</option>
+	   <option value="9">09</option>
+	   <option value="10">10</option>
+	      <option value="11">11</option>
+	   <option value="12">12</option>
+	 </select>월 
+<select name="month" onchange="monthCheck(this)">	
+<option></option>
+</select> 일</td>
+</tr>
+<tr>
+<td align=center>우편번호</td>
+<td colspan="3"><input type="text" class="text">&nbsp;-&nbsp;<input type="text" class="text">
+<input type="button" value="우편번호검색"></td>
+</tr>
+<tr>
+<td align=center>주소</td>
+<td colspan="3"><input type="text" class="text"></td>
+</tr>
+<tr>
+<td align=center>나머지주소</td>
+<td colspan="3"><input type="text" class="text"></td>
+</tr>
+<tr>
+<td align=center>E-Mail</td>
+<td colspan="3"><input type="text" class="text">&nbsp;@&nbsp;
+<select name="email" >
+<option>선택하세요</option>
+</select></td>
+</tr>
+<tr>
+<td align=center>직업
+</td>
+<td colspan="3"><select name="job">
+<option>컴퓨터/정보통신</option></select></td>
+</tr>
+<tr>
+<div class="lastBtn">
+<td colspan="4"><input type="button"  value="등 록" >&nbsp;&nbsp;
+<input type="button"  value="취 소" ></td></div>
+</tr>
+</table>
+</body>
+</html>
